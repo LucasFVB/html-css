@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+        <p>Tente abrir o site foda em varios dispositivos diferentes</p>
+    
+    <picture> 
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+        <p>Vamos cume audio</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <audio preload="metadata" autoplay controls loop>
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+            <source src="midia/guanacast-33.mp3" type="audio/ogg">
+            <source src="midia/guanacast-33.mp3" type="aduio/wav">
+            <p>Infelizmente seu navegador não consegue reproduzir áduio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+    <h2>Inserindo videos hospedados localmente</h2>
+        <p>este video está hospedado no meu próprio servidor.</p>
+
+        <video width="560" poster="imagens/poster.jpg" controls>
+            <source src="midia/Video-1.m4v" type="video/m4v">
+            <source src="midia/Video-1.webm" type="video/webm">
+            <source src="midia/Video-1.mp4" type="video/mp4">
+            <p>Seu navegador não tem compatiblilidade com reprodução de videos</p>
+        </video>
+
+    <h2>Incorporar videos do Youtube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    <h2>Incorporando videos do Vimeo</h2>
+        <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&autoplay=1&color=c9ff23&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        
+
+
+
+</body>
+</html>

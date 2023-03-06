@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'bebas neue' ;
+    src: url('fonts/BebasNeue-Regular.otf') format('opentype') url('fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font: normal 16px 'bebas neue', verdana, sans-serif;
+    text-align: left;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    text-indent: 33px;
+}

@@ -1,0 +1,51 @@
+@charset "UTF-8" ;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* ID em HTML = (#) em CSS (só pode um elemento por doc html)
+   em HTML é Class = em CSS é (.) (pode vários elementos)
+*/
+
+body{
+    background-color: rgb(120, 128, 248);
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.425);
+    border-radius: 14px;
+    border: 3px solid black;
+    margin: auto;
+    width: 600px;
+    padding: 10px;
+    background-color: white;
+}
+
+h1{
+    color: rgb(27, 0, 122);
+}
+
+h1#principal{
+    background-color: rgb(120, 128, 248);
+    text-align: center;
+    color: white;
+}
+
+h2{
+    color: rgb(20, 20, 20);
+}
+
+.basico{
+    background-color: rgb(120, 128, 248);
+}
+
+.intermediario{
+    font-weight: 800;
+    color: rgb(34, 34, 160);
+}
+
+.destaque{
+    background-color: rgba(233, 233, 115, 0.562);
+}
+
+p{
+    text-indent: 10px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+        <p>Abrindo esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível"> <!--Esse é a imagem base, a ordem do menor para o maior-->
+    </picture>
+
+    <h2>Teste com minhas proprias imagens</h2>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p-sheru.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m-sheru.png" type="image/png">
+        <img src="imagens/Foto-g-sheru.png" alt="Imagem flexível">
+    </picture>
+    
+    <h2>mais imagens</h2>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p-mask.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m-mask.png" type="image/png">
+        <img src="imagens/foto-g-mask.png" alt="imagem flexivel">
+    </picture>
+
+    <!--MP3 WAV OGG-->
+    <h1>Reproduzindo áudio</h1>
+        <p>Vamos aprender a reproduzir áudios no HTML5</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!--evitar arquivos wav, são muito pesados-->
+        <p>infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <h1>inserindo vídeos hospedados cocalmente</h1>
+        <p>este vídeo está hospedado no meu próprio servidor</p>
+        
+        <!--videos hospedados pode custar muito caro para o cliente-->
+        <video width="560" controls loop poster="imagens/poster.jpg">
+            <source src="midia/Video-1.m4v" type="video/m4v">
+            <source src="midia/Video-1.mp4" type="video/mp4">
+            <source src="midia/Video-1.webm" type="video/webm">
+            <p>Seu navegador não tem compatiblilidade com reprodução de videos</p>   
+        </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p><a href="https://www.youtube.com/embed/FdE5G95B7Mg" target="_blank" rel="external">Reel 2021</a> from <a href="https://www.lemoncholy.net/" target="_blank" rel="author">Michelle Cheng / Lemoncholy</a> on <a href="https://www.youtube.com/" target="_blank" rel="external">Youtube</a>.</p>
+
+    <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/197093965" target="_blank" rel="external">Reel 2016</a> from <a href="https://vimeo.com/wabbla" target="_blank" rel="author">Alvise Zennaro</a> on <a href="https://vimeo.com" target="_blank" rel="external">Vimeo</a>.</p>
+
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/DmoqsDA1wvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    
+
+</body>
+</html>

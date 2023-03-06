@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        h1{ /*box-leve*/
+
+            display: inline;
+
+            background-color: lightgray;
+            /* box-sizing */
+            height: 300px;
+            width: 300px;
+
+            /* border: 10px solid red 
+                    width -> style -> color 
+            */
+            border-radius: 10px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(120, 82, 224);
+
+
+            /* padding: 30px 30px 30px 30px 
+                        top -> right -> bottom -> left
+                      : 20px 30px  
+                        top-bottom -> right-left
+                    Se todos lados forem o mesmo tamanho
+                    basta uma só médida
+                    Se colocar duas medidas valem por top-bottom e right-left
+            */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding: 10px;
+
+            /* margin: 110px 30px 40px 40px;  
+                        top -> right -> bottom -> left
+                        20px auto 30px auto;
+        Se quiser também pode centralizar(auto) alguma margin  
+            */
+            margin-top: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            margin:20px auto 20px auto;
+
+
+            /* outline: 20px dotted salmon 
+                        width -> style -> color
+            */
+            outline-width: 5px;
+            outline-style: dotted;
+            outline-color: salmon;
+            
+
+
+        }
+
+        p{
+            display: inline;
+        }
+
+        a{ /* inline-level */
+            display: block;
+            height: auto;
+            width: 199px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: blueviolet;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            margin-top: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixa box-level</h1>
+        <p>Parágrafos também são exemplos de box-leve, mas os <a href="#">links são exemplos de caixa inline-level</a>. Vamos ver como tudo isso funciona </p>
+        <button>oi</button>
+        <small>oi</small>
+</body>
+</html>

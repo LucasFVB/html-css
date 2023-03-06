@@ -1,0 +1,10 @@
+* { /* Configurações globais das CSS */
+   height: 100%; 
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #f4f1f5;
+    background-image: linear-gradient(to top left, #0f2e527a, #71AAEB, #2676D1, #5a84b4, #1D5A9E);
+    background-attachment: fixed;
+}

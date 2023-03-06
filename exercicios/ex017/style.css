@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'bebas' ;
+    src: url('fonts/BebasNeue-Regular.otf') format('opentype'), url('fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+    tipos de format()
+    - opentype (otf)
+    - truetype (ttf)
+    - truetype-aat { Apple Advanced Typography)
+    - svg
+    */
+
+body {
+    font-family: 'bebas';
+    font-size: 1.2em;
+    font-style: italic;
+    color: #0c0c0c;
+}
+
+p {
+    font-family: 'bebas';
+    font-weight: lighter;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            display: inline-block;
+            background-color: lightgrey;
+            text-align: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        a:visited{
+            color: blue;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        .especial:hover{
+            text-decoration: none;
+        }
+
+        .especial::before{
+            content: '⇒';
+            font-weight: lighter;
+        }
+
+        .especial::after{
+            content: '⇐' ;
+            font-weight: lighter;
+        }
+
+        div > p {
+            display: none;
+        }
+        /* começo de um menu de site */
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color:  red;
+        }
+
+        div:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+        <p>Passe o mouse sobrer o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do exemplo</p>
+
+    <h1>Personalizando um link</h1>
+    <p>
+        Para ver minhas fotos, acesse o <a href="https://www.instagram.com/lucas.fvb/?hl=pt-br" target="_blank" rel="external" class="especial"> Lucas Vilas Boas</a>
+    </p>
+    <p>
+        Se quiser ver mais desenhos, visite o meu <a href="https://www.deviantart.com/lucasfvb" target="_blank" rel="external" class="especial"> Deviantart</a>
+    </p>
+    
+</body>
+</html>
