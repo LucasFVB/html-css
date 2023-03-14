@@ -64,12 +64,14 @@ section{
 }
 
 section.normal{
-    padding-left: 30px;
-    padding-bottom: 50px; 
     padding-top: 7vh;
     padding-bottom: 7vh;
 }
 
+section.normal p{
+    padding-left: 30px;
+    padding-bottom: 50px; 
+}
 
 section.image{
     position: relative;
