@@ -25,13 +25,16 @@ a:hover{
     transition-duration: 0.4s;
 }
 
+html, body{
+    min-height: 100vh;
+}
+
 body{
     background-color: #fffcf6;
 }
 
 header{
     background-image: url(../imagens/background003.png);
-    background-repeat: repeat;
     background-attachment: fixed;
     background-size: contain;
     background-color: black;
