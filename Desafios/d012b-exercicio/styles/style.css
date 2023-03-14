@@ -13,6 +13,7 @@
 }
 
 html, body{
+    font-family: var(--font01);
     min-height: 100vh;
     background: darkgrey;
 }
@@ -24,8 +25,10 @@ header{
 }
 
 header > h1{
+    font-family: var(--font02);
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw;
 }
 
 header > p{
@@ -36,6 +39,7 @@ header a, footer a{
     color: white;
     text-decoration: none;
     font-weight: bolder;
+    
 }
 
 header a:hover, footer a:hover{
@@ -43,10 +47,12 @@ header a:hover, footer a:hover{
 }
 
 section{
+    font-family: var(--font03);
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -60,7 +66,8 @@ section.image{
 }
 
 section.image > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgb(0, 0, 0);
 }
 
