@@ -13,17 +13,6 @@
     font-size: 1em;
 }
 
-a{  
-    font-weight: bolder;
-    color: white;
-    text-decoration: none;
-}
-
-a:hover{
-    color: rgb(194, 188, 211);
-    text-decoration: underline;
-    transition-duration: 0.4s;
-}
 
 html, body{
     min-height: 100vh;
@@ -51,13 +40,21 @@ header h1{
     color: white;
 }
 
-header span{
-    font-size: 10vw;
-}
-
 header p{
     color: white;
     font-family: var(--font-default);
+}
+
+a{  
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(219, 219, 219);
+    text-decoration: underline;
+    transition-duration: 0.4s;
 }
 
 section{
@@ -67,14 +64,12 @@ section{
 }
 
 section.normal{
+    padding-left: 30px;
+    padding-bottom: 50px; 
     padding-top: 7vh;
     padding-bottom: 7vh;
 }
 
-section.normal p{
-    padding-left: 30px;
-    padding-bottom: 50px; 
-}
 
 section.image{
     position: relative;
