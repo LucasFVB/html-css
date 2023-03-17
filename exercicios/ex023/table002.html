@@ -15,6 +15,7 @@
             border-collapse: collapse;
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.288);
             margin: auto;
+            position: relative;
         }
         caption{
             border: 1px solid black;
@@ -28,6 +29,11 @@
             border: 1px solid black;
             padding: 7px;
             text-align: center;
+        }
+        thead > tr > th {
+            position: sticky;
+            background-color: rgb(77, 74, 74);
+            top: -1px;
         }
         thead, tfoot{
             background-color: rgb(77, 74, 74);
