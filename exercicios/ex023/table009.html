@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    caption{
+        font-size: 1.3em;
+        font-weight: bolder;
+        padding: 8px;
+    }
+    th{
+        background-color: white;
+    }
+    td, th{
+        border: 1px solid black;
+        padding: 8px;
+    }
+    col.cnome{
+        background-color: chartreuse;
+    }
+    col.cidade{
+        background-color: chartreuse;
+    }
+    /* segunda tabela */
+
+    #table02 td{
+        padding: 21px;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+    }
+        
+    
+    col.c1{
+        background-color: #6E0D25;
+    }
+    col.c2{
+        background-color: #b8b881;
+    }
+    col.c3{
+        background-color: #DCAB6B;
+    }
+    col.c4{
+        background-color: #774E24;
+    }
+    col.c5{
+        background-color: #6A381F;
+    }
+</style>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <Colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade" span="2">
+            <col class="cprof">
+        </Colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">nomes</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Karol</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+    </table>
+    <h2>Outras Tabelas</h2>
+    <table id="table02">
+        <colgroup>
+            <col class="c1">
+            <col class="c2">
+            <col class="c3">
+            <col class="c4">
+            <col class="c5">
+        </colgroup>
+        <tr>
+            <td>1A</td>
+            <td>1B</td>
+            <td>1C</td>
+            <td>1D</td>
+            <td>1E</td>
+        </tr>
+        <tr>
+            <td>2A</td>
+            <td>2B</td>
+            <td>2C</td>
+            <td>2D</td>
+            <td>2E</td>
+        </tr>
+        <tr>
+            <td>3A</td>
+            <td>3B</td>
+            <td>3C</td>
+            <td>3D</td>
+            <td>3E</td>
+        </tr>
+        <tr>
+            <td>4A</td>
+            <td>4B</td>
+            <td>4C</td>
+            <td>4D</td>
+            <td>4E</td>
+        </tr>
+    </table>
+
+    
+</body>
+</html>
