@@ -31,7 +31,6 @@ section#mobile{
     width: 311px;
     height: 627px;
     background-image: url(../images/frame-iphone.png);
-    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
