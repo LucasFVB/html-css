@@ -3,11 +3,11 @@
 
 Estou aprendendo a criar sites e agora vou gerenciar meus repositórios.
 
-<a href="https://lucasfvb.github.io/html-css/Desafios/d010c/project-android.html"> Executar projeto Android d010c </a>
+<a href="https://lucasfvb.github.io/html-css/Desafios/d010c/project-android.html"> Project d010c </a>
 
-<a href="https://lucasfvb.github.io/html-css/Desafios/d012/Poemas.html"> Executar Projeto d012 Projeto-Cordel </a>
+<a href="https://lucasfvb.github.io/html-css/Desafios/d012/Poemas.html"> Project d012 </a>
 
-<a href="https://lucasfvb.github.io/html-css/Desafios/d013/index.html"> Executar projeto d013 </a>
+<a href="https://lucasfvb.github.io/html-css/Desafios/d013/index.html"> Project d013 </a>
 
-<a href="https://lucasfvb.github.io/html-css/Desafios/d015/rede-sociais.html"> Executar projeto d015 </a>
+<a href="https://lucasfvb.github.io/html-css/Desafios/d015/rede-sociais.html"> Project d015 </a>
 
