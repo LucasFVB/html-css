@@ -36,9 +36,9 @@ section#mobile{
 
 iframe#tela{
     position: relative;
-    width: 265px;
-    height: 471px;
-    top: 50%;
+    width: 267px;
+    height: 468px;
+    top: 50.3%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -70,7 +70,7 @@ section#social img:hover{
 section#social img:active{
     border: 3px solid rgba(255, 255, 255, 0.829);
     transform: translate(-2px, -2px);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.377);
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.377);
     
 }
 /* a#button img{
