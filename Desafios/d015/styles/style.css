@@ -6,6 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 html, body {
     height: 100vh;
     width: 100vw;
@@ -70,16 +71,19 @@ section#social img{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
     box-sizing: border-box;
 }
+section#social > a{
+    -webkit-tap-highlight-color: transparent;
+}
 
 section#social img:hover{
-    border: 2px solid rgba(255, 255, 255, 0.596);
+    border: 2px solid rgba(255, 255, 255, 0.699);
     transform: translate(-3px, -3px);
     box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.377);
     transition: transform 0.5s;
 }
 
 section#social img:active{
-    border: 3px solid rgba(255, 255, 255, 0.829);
+    border: 2.5px solid rgba(255, 255, 255, 0.952);
     transform: translate(-2px, -2px);
     box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.377);
     
