@@ -34,6 +34,17 @@ section#mobile{
     background-repeat: no-repeat;
 }
 
+.invisible-button{
+    position: absolute;
+    top: 93.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    opacity: 0%;
+}
+
 iframe#tela{
     position: relative;
     width: 267px;
