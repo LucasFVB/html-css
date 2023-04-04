@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form preço</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Compra</h1>
+    <form action="cadastro.php" method="get" oninput="itotal.innerHTML = Number(iprice.value) * (iquant.value)">
+        <div>
+            <label for="iprod">Produto: </label>
+        <select name="prod" id="iprod">
+            <option value="" selected>--Escolha--</option>
+            <optgroup label="produtos">
+                <option value="">Monitor</option>
+                <option value="">Mouse</option>
+                <option value="">Teclado</option>
+                <option value="">Celular</option>
+            </optgroup>
+        </select>
+        </div>
+        <div>
+            <label for="iprice">Preço: <strong>R$</strong></label>
+            <input type="number" name="price" id="iprice">
+        </div>
+        <div>
+            <label for="iquant">Quantidade: </label>
+            <input type="number" name="quant" id="iquant">
+        </div>
+        <div>
+            <label for="itotal">Total: <strong>R$</strong></label>
+            <output name="total" id="itotal">0</output>
+        </div>
+    </form>
+    
+</body>
+</html>
