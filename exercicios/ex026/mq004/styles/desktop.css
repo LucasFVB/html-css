@@ -1,0 +1,12 @@
+@charset "UTF-8" ;
+/* Desktop Screen */
+
+body{
+    background-image: url(../images/back-pc.jpg);
+}
+
+img#phone{ display: none; }
+img#tablet{ display: none; }
+img#desktop{ display: block; } /* <-- */
+img#tv{ display: none; }
+img#print{ display: none; }

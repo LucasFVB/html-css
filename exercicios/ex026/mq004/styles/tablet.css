@@ -1,0 +1,13 @@
+@charset "UTF-8" ;
+/* Tablet Screen */
+
+body{
+    background-image: url(../images/back-tablet.jpg);
+}
+
+img#phone{ display: none; }
+img#tablet{ display: block; } /* <-- */
+img#desktop{ display: none; } 
+img#tv{ display: none; }
+img#print{ display: none; }
+

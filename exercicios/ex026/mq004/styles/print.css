@@ -1,0 +1,17 @@
+@charset "UTF-8" ;
+/* Print paper */
+
+body{
+    background-image: url(../images/back-print.jpg);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    border: 1px solid black;
+}
+
+img#phone{ display: none; }
+img#tablet{ display: none; }
+img#desktop{ display: none; }
+img#tv{ display: none; }  
+img#print{ display: block; } /* <-- */
