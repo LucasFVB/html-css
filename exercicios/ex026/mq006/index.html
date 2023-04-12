@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/media-query.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Menu</title>
 </head>
-<body>
+<body onresize="changeSize()">
     <header>
         <h1>Test</h1>
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
@@ -34,6 +35,15 @@
     </main>
     
     <script>
+
+        function changeSize()  {
+            if (window.innerWidth >= 768) {
+                icons.style.display = 'block'
+            } else{
+                icons.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (icons.style.display == 'block') {
                 icons.style.display = 'none'
