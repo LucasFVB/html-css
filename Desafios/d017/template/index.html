@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>template</title>
 </head>
-<body>
-
-    <span id="burguer" class="material-icons">menu</span>
-        <menu>
+<body onresize="changeSize()">
+    <nav>
+    <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="icons">
             <ul>
                 <li><a href="#">Class</a></li>
                 <li><a href="#">Online Courses</a></li>
@@ -21,20 +21,49 @@
             </ul>
         </menu>
     </nav>
-    <header class="image" id="img01">
-        <h1>Meet Débora</h1>
-        <p>Certified yoga teacher</p>
+    
+    <header id="img01">
+        <h1>MEET DÉBORA</h1>
+        <p>CERTIFIED YOGA TEACHER</p>
     </header>
+
     <main>
-        <section>
-            <h2>Breath in lots of love</h2>
+        
+            <h2>Breathe in lots of love</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sint quidem soluta asperiores est enim facere dignissimos assumenda tenetur aliquam pariatur nobis, autem, harum atque eveniet eius deserunt odio libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi aspernatur explicabo incidunt mollitia animi harum dignissimos amet ea at. Perferendis atque optio illo eius voluptas! Mollitia laboriosam voluptatibus sequi!</p>
 
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat mollitia soluta error ex illum voluptas nam, natus fuga autem dolore magni nisi minus cum, odio exercitationem hic velit, labore quasi!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint beatae veniam fugiat non adipisci quidem excepturi quam quis illo dolorem quia dolorum delectus iure, doloremque tenetur nostrum molestias esse?</p>
-        </section>
+        
 
-        <h2>Yoga Class</h2>
-        <!-- <img src="images/yoha02.jpg" alt="mulher meditando"> -->
+        <h2 class="sub">Yoga Class</h2>
+
+        <img class="image" src="images/yoga02.jpg" alt="mulher meditando">
+        <h3>Online yoga</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum repellat officiis itaque consectetur accusantium odio consequatur quasi ducimus hic harum. Dignissimos inventore libero eum ex accusantium magnam eos, ullam ratione!</p>
+        <p><a href="#">LEARN MORE > </a></p>
+
+        <img class="image" src="images/yoga03.jpg" alt="mulher fazendo yoga">
+        <h3>Group yoga</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro harum, nulla nihil tempore vero iusto velit pariatur saepe suscipit aspernatur quis in tempora esse quisquam. Tempora consequuntur vel in repellendus!</p>
+        <p><a href="#">LEARN MORE > </a></p>
+
     </main>
+
+    <script>
+        function changeSize() {
+            if (window.innerWidth >= 768) {
+                icons.style.display = 'block'
+            } else{
+                icons.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (icons.style.display == 'block') {
+                icons.style.display = 'none'
+            } else {
+                icons.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

@@ -1,5 +1,11 @@
 @charset "UTF-8" ;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+:root{
+    --font-tittle: 'Playfair Display', serif;
+    --font-text: 'Raleway', sans-serif;
+}
 *{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -12,3 +18,95 @@ html, body{
     height: 100vh;
 }
 
+nav{
+    text-align: right;
+}
+
+span#burguer{
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 45px;
+}
+
+menu{
+    display: none;
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu > ul > li, a{
+    text-align: center;
+}
+
+header{
+    width: 100vw;
+    height: 60vh;
+}
+
+header#img01{
+    position: relative;
+    background-image: url(../images/yoga01.jpg);
+    background-size: 120vh;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+header> h1{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 4.4em;
+    color: white;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+    line-height: 1em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.226);
+}
+
+header> p{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 66%;
+    left: 50%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+}
+
+img{
+    width: 420px;
+}
+
+main{
+    padding: 20px;
+    margin-top: 30px;
+    width: 90vw;
+}
+
+main > h2{
+    width: 300px;
+    font-size: 3.5em;
+    font-weight: 200;
+    font-family: 'Playfair Display', serif;
+    line-height: 1em;
+    font-variant: small-caps;
+}
+
+main > p {
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+
+.image{
+    background-attachment: fixed;
+    border-radius: 4px;
+}
