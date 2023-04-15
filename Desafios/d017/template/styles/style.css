@@ -38,8 +38,25 @@ menu > ul{
 }
 
 menu > ul > li, a{
+    display: block;
     text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
 }
+
+menu > ul > li > a:hover{
+    text-decoration: underline;
+    background-color: rgba(245, 242, 242, 0.603);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.267);
+    border-radius: 5px;
+}
+
+menu > ul > li > a:active{
+    transform: translate(-2px , -2px);
+    transition: transform 0.1s;
+}
+
 
 header{
     width: 100vw;
@@ -49,10 +66,11 @@ header{
 header#img01{
     position: relative;
     background-image: url(../images/yoga01.jpg);
-    background-size: 120vh;
+    background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.199);
 }
 
 
@@ -92,21 +110,81 @@ main{
 }
 
 main > h2{
-    width: 300px;
+    max-width: 300px;
     font-size: 3.5em;
     font-weight: 200;
     font-family: 'Playfair Display', serif;
     line-height: 1em;
     font-variant: small-caps;
+    font-style: italic;
+    margin-bottom: 70px;
 }
 
 main > p {
-    margin-top: 20px;
+    margin-top: 40px;
     font-family: 'Raleway', sans-serif;
     text-align: justify;
 }
 
+
+h2.sub{
+    font-size: 3em;
+    margin-top: 100px;
+    text-align: center; 
+    font-family: 'Playfair Display', serif;
+    font-variant: small-caps;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
 .image{
+    width: 90vw;
     background-attachment: fixed;
     border-radius: 4px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.301);
+    
+}
+
+h3{
+    font-size: 1.5em;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    margin-top: 20px; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+section > p{
+    margin-top: 10px;
+}
+
+section > p > a{
+    font-size: 0.8em;
+    font-weight: bolder;
+    text-align: left;
+    margin-bottom: 100px;
+    padding: 0px;
+    
+}
+
+footer{
+    border-top: 1px solid black;
+    padding: 30px;
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.76);
+}
+
+footer a{
+    display: inline;
+    color: white;
+    text-decoration: underline;
+}
+
+footer p{
+    margin-top: 10px;
+    line-height: 1em;
 }
