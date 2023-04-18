@@ -54,6 +54,7 @@ Extra large devices: 1200px +
 
     header > p{
         top: 62%;
+        left: 50%;
     }
 
     main > h2{
