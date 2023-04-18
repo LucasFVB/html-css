@@ -43,12 +43,13 @@ menu > ul > li, a{
     text-decoration: none;
     padding: 10px;
     color: black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.281);
 }
 
 menu > ul > li > a:hover{
     text-decoration: underline;
     background-color: rgba(245, 242, 242, 0.603);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.267);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
     border-radius: 5px;
 }
 
@@ -92,11 +93,12 @@ header> p{
     position: absolute;
     transform: translate(-50%, -50%);
     top: 70%;
-    left: 50%;
+    left: 49%;
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 1em; 
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+    
 }
 
 img{
@@ -127,6 +129,7 @@ main > p {
 }
 
 
+
 h2.sub{
     font-size: 3em;
     margin-top: 100px;
@@ -135,13 +138,14 @@ h2.sub{
     font-variant: small-caps;
     font-weight: 200;
     margin-bottom: 40px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
 }
 
 .image{
     width: 90vw;
     background-attachment: fixed;
     border-radius: 4px;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.301);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.151);
     
 }
 
@@ -156,11 +160,11 @@ h3{
     font-weight: 400;
 }
 
-section > p{
+div > p{
     margin-top: 10px;
 }
 
-section > p > a{
+div > p > a{
     font-size: 0.8em;
     font-weight: bolder;
     text-align: left;
