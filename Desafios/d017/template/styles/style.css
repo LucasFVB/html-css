@@ -93,16 +93,14 @@ header> p{
     position: absolute;
     transform: translate(-50%, -50%);
     top: 70%;
-    left: 49%;
+    left: 47%;
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 1em; 
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    word-spacing: 0.1px;
     
-}
-
-img{
-    width: 420px;
 }
 
 main{
