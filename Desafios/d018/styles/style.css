@@ -1,0 +1,67 @@
+@charset "UTF-8" ;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+html, body{
+    width: 100vw;
+}
+body{
+    background-color: #47A8BD;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+main{
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    width: 65vw;
+    height: 70vh;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.158);
+    
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    margin-top: 20px;
+}
+
+input{
+    /* width: 60vw; */
+    padding: 12px;
+    border-radius: 10px;
+    border: 0px solid black;
+}
+div#password{
+    background-color: blue;
+    display: inline-block;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+#key{
+    color: white;
+    font-size: 2em;
+    vertical-align: bottom;
+}
+
+ div#enviar{
+    margin-top: 10px;
+}
+
