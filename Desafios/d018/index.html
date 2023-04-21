@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="styles/media-queries.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Tela de Login</title>
+    <style>
+        .material-symbols-outlined{
+            font-size: 1.8em;
+        }
+    </style>
 </head>
 <body>
     
@@ -16,26 +21,24 @@
             <div id="image">
                 
             </div>
-            <h1>Login</h1>
-            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-            <form action="cadastro.php" method="post">
-                <div id="">
-                    
-                    <input type="email" name="mail" id="imail" required autocomplete="email" placeholder="seu e-mail" maxlength="50" size="">
-                    <!-- <label for="imail"> E-mail</label>  -->
-                </div>
-                <div id="password">
-                    <span id="key" class="material-symbols-outlined">vpn_key</span>
-                    <input type="password" name="pass" id="ipass" required minlength="8" maxlength="50" placeholder="sua senha">
-                    <!-- <label for="ipass"> Senha</label> -->
-                </div>
-                <div id="enviar">
-                    <input type="submit" value="enviar">
-                </div>
-                <div id="esqueci">
-                    <input type="submit" value="Esqueci a senha">
-                </div>
-            </form>
+            <div id="forma">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="cadastro.php" method="post">
+                    <div class="camp">
+                        <label for="imail"><span class="material-symbols-outlined"> person</span></label>
+                        <input type="email" name="mail" id="imail" required autocomplete="email" placeholder="seu e-mail" maxlength="50" size="">
+                        
+                    </div>
+                    <div class="camp">
+                        <label for="ipass"><span class="material-symbols-outlined">vpn_key</span></label>
+                        <input type="password" name="pass" id="ipass" required minlength="8" maxlength="50" placeholder="sua senha">
+                        
+                    </div>
+                        <input type="submit" value="entrar">
+                        <a href="esqueci.html" class="botao">Esqueci a senha</a>
+                </form>
+            </div>
         </section>
     </main>
     
