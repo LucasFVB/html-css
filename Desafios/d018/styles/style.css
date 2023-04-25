@@ -6,13 +6,13 @@
     Lilás: #5f2c82
 */
 
-*{
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
     -webkit-tap-highlight-color: transparent;
 }
-html, body{
+html, body {
     background-color: #5f2c82;
     width: 100vw;
     height: 100vh;
@@ -24,7 +24,7 @@ main{
     width: 100vw;
 }
 
-section#login{
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,70 +35,116 @@ section#login{
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
     transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
-section#login > div#image{
+section#login > div#image {
     display: block;
-    background-image: url(../images/background002.jpg);
+    background-image: url(../images/background001.jpg);
     background-size: cover;
     background-position: left bottom;
     height: 200px; 
 }
 
-section#login > div#forma{
+section#login > div#forma {
     display: block;
     padding: 10px;
 }
 
-div#forma > h1{
+div#forma > h1 {
     text-align: center;
+    margin-bottom: 10px;
 }
 
-div#forma > p{
-    margin-top: 20px;
+div#forma > p {
     font-size: 0.8em;
 }
 
-form > .camp{
-    margin-top: 5px 0px;
+form > .camp {
     border: 2px solid #5f2c82;
     background-color: #5F2C82;
-    border-radius: 10px;
+    border-radius: 12px;
     display: block;
     width: 100%;
     height: 40px;
+    margin: 5px 0px;
 }
 
-div.camp > input{
+div.camp > label {
+    display: none;
+}
+
+span.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48 
+}
+
+div.camp >span.material-symbols-outlined {
+    color: white;
+    font-size: 1.9em;
+    width: 40;
+    padding: 5px;
+}
+
+div.camp > input {
     background-color: #94cfcd;
     font-size: 1em;
-    width: calc(100% - 45px);
-    height: 100%;
+    width: calc(100% - 53px);
+    height: 80%;
     border: 0px;
     border-radius: 10px;
     padding: 4px;
-    transform: translateY(-10px);
+    transform: translateY(-9px);
 }
 
-div.camp > input:focus-within{
+div.camp > input:focus-within {
     background-color: white;
+    border: none;
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 800,
-    'GRAD' 0,
-    'opsz' 48
-  
-  }
-
-  .material-symbols-outlined{
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #53aaa7;
     color: white;
-    font-size: 1.9em;
-    width: 40px;
-    padding: 5px;
-  }
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: darkslategray;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    border: 1px solid #53aaa7;
+    border-radius: 5px;
+    background-color: white;
+    padding-top: 5px;
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #30615e;
+}
+
+form > a.botao:hover{
+    background-image: linear-gradient(#53aaa7, white 90%);
+}
+
+form > a.botao > span.material-symbols-outlined {
+    font-size: 0.8em;
+}
+  
 
   
 
