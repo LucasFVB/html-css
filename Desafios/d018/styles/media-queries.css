@@ -24,7 +24,7 @@
     }
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
@@ -38,7 +38,7 @@
         float: right;
         width: 40%;
         height: 100%;
-        background-position: top;
+        background-position: bottom;
     }
 
     section#login > div#forma {

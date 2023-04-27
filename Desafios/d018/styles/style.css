@@ -11,7 +11,9 @@
     margin: 0px;
     padding: 0px;
     -webkit-tap-highlight-color: transparent;
+    /* box-sizing: border-box;     */
 }
+
 html, body {
     background-color: #5f2c82;
     width: 100vw;
@@ -29,9 +31,9 @@ section#login {
     top: 50%;
     left: 50%;
     overflow: hidden;
-    background-color: white;
     width: 250px;
     height: 515px;
+    background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
     transform: translate(-50%, -50%);
@@ -43,7 +45,7 @@ section#login > div#image {
     display: block;
     background-image: url(../images/background001.jpg);
     background-size: cover;
-    background-position: left bottom;
+    background-position: bottom;
     height: 200px; 
 }
 
@@ -120,9 +122,10 @@ form > input[type=submit] {
 
 form > input[type=submit]:hover {
     background-color: darkslategray;
+    transition: .3s;
 }
 
-form > a.botao {
+form > a.button {
     display: block;
     text-align: center;
     border: 1px solid #53aaa7;
@@ -137,11 +140,11 @@ form > a.botao {
     color: #30615e;
 }
 
-form > a.botao:hover{
+form > a.button:hover{
     background-image: linear-gradient(#53aaa7, white 90%);
 }
 
-form > a.botao > span.material-symbols-outlined {
+form > a.button > span {
     font-size: 0.8em;
 }
   
