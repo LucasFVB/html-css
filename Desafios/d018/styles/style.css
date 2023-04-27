@@ -36,9 +36,9 @@ section#login {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
-    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#image {
@@ -61,6 +61,7 @@ div#forma > h1 {
 
 div#forma > p {
     font-size: 0.8em;
+    margin: 10px 0px;
 }
 
 form > .camp {
@@ -88,7 +89,7 @@ span.material-symbols-outlined {
 div.camp >span.material-symbols-outlined {
     color: white;
     font-size: 1.9em;
-    width: 40;
+    /* width: 40px; */
     padding: 5px;
 }
 
@@ -100,12 +101,11 @@ div.camp > input {
     border: 0px;
     border-radius: 10px;
     padding: 4px;
-    transform: translateY(-9px);
+    transform: translateY(-8px);
 }
 
 div.camp > input:focus-within {
     background-color: white;
-    border: none;
 }
 
 form > input[type=submit] {
