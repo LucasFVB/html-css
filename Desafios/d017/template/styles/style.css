@@ -48,6 +48,16 @@ menu > ul > li, a{
     color: black;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.123);
 }
+menu > ul > li > a#log{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+menu > ul > li > a#log:hover{
+    background-color: rgb(37, 37, 37);
+}
 
 menu > ul > li > a:hover{
     text-decoration: underline;
@@ -174,32 +184,6 @@ div > p > a{
     
 }
 
-/* section#students > div#img01{
-    display: block;
-    background-image: url(../images/students01.jpg);
-    background-size: cover;
-    height: 300px;
-    width: 200px;
-    float: left;
-}
-
-section#students > div#img02{
-    display: block;
-    background-image: url(../images/students02.jpg);
-    background-size: cover;
-    height: 300px;
-    width: 200px;
-    float: left;
-}
-
-section#students > div#img03{
-    display: block;
-    background-image: url(../images/students03.jpg);
-    background-size: cover;
-    height: 300px;
-    width: 200px;
-    float: left;
-} */
 div.container{
     margin-bottom: 150px;
 }
@@ -223,7 +207,33 @@ p > span.name{
     display: block;
 }
 
+div.images02{
+    display: inline-block;
+    
+}
+
+div.images02 > img#about01{
+    width: 100px;
+    margin-right: 80px;
+    vertical-align: middle;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.450);
+}
+
+div.images02 > img#about02{
+    width: 200px;
+    vertical-align: middle;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+}
+
+section.about-me > p{
+    margin: 50px 0px 0px 186px;
+    font-weight: lighter;
+}
+
 footer{
+    margin-top: 200px;
     border-top: 1px solid black;
     padding: 30px;
     background-color: #202020;
