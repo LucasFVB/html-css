@@ -172,7 +172,7 @@ Extra large devices: 1200px +
     }
 
     section.about-me > p {
-        margin: 40px 0px;
+        margin: 40px 0px 40px 40px;
     }
 
     
