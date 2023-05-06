@@ -23,6 +23,7 @@ p{
 
 nav{
     text-align: right;
+    background-color: black;
 }
 
 span#burguer{
@@ -30,10 +31,12 @@ span#burguer{
     padding: 10px;
     cursor: pointer;
     font-size: 45px;
+    color: white;
 }
 
 menu{
     display: none;
+    background-color: white;
 }
 
 menu > ul{
@@ -186,8 +189,8 @@ div > p > a{
     
 }
 
-div.container{
-    margin-bottom: 150px;
+div.item02{
+    margin-bottom: 200px;
 }
 
 img.images{
