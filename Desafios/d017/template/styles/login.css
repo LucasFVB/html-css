@@ -4,18 +4,22 @@
     margin: 0px;
     padding: 0px;
     -webkit-tap-highlight-color: transparent;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* box-sizing: border-box; */
 }
 
 html, body {
-    width: 100vw;
+    
     height: 100vh;
-    background-color: #666B88;
+    background-color: #1D3336;
+    background-image: url(../images/background02.jpg);
+    background-size: 100vh;
+    background-position: center center;
 }
 
 main {
     position: relative;
-    width: 100vw;
+    
     height: 100vh;
 }
 
@@ -24,12 +28,14 @@ section#login {
     top: 50%;
     left: 50%;
     overflow: hidden;
-    transform: translate(-50%, -50%);
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
     border-radius: 15px;
     width: 250px;
     height: 515px;
+    transform: translate(-50%, -50%);
+    transition: width .3s , height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#image {
@@ -70,12 +76,12 @@ span.material-symbols-outlined {
 }
 
 form > div.camp {
-    background-color: #666B88;
-    border: 1px solid #666B88;
+    background-color: black;
+    border: 1px solid black;
     border-radius: 10px;
     display: block;
     width: 100%;
-    height: 40px;
+    height: 39px;
     margin: 5px 0px;
 }
 
@@ -85,13 +91,13 @@ div.camp > label{
 
 div.camp > input{
     width: calc(100% - 52px);
-    background-color: #cdd1e4;
+    background-color: #dbd8d8;
     border: none;
     border-radius: 9px;
     padding: 4px;
     font-size: 1em;
     height: 75%;
-    transform: translateY(-7px);
+    transform: translateY(-8px);
 }
 
 div.camp > input:focus-within {
@@ -103,7 +109,7 @@ form > input[type=submit] {
     color: white;
     width: 100%;
     height: 35px;
-    background-color: #b9bed8;
+    background-color: #c5c1c1;
     font-size: 1em;
     border: none;
     border-radius: 6px;
@@ -111,14 +117,14 @@ form > input[type=submit] {
 }
 
 form > input[type=submit]:hover {
-    background-color: #6f748d;
+    background-color: #9b9090;
     transition: .3s;
 }
 
 form > a#button{
     display: block;
     text-align: center;
-    border: 1px solid #666B88;
+    border: 1px solid rgb(75, 71, 71);
     border-radius: 6px;
     width: 100%;
     height: 30px;
@@ -126,17 +132,19 @@ form > a#button{
     padding-top: 6px;
     text-decoration: none;
     font-size: 1em;
-    color: #575b72;
+    color: #292626;
+}
+
+form > a#button:hover{
+    background-image: radial-gradient( white 50%, #dbd8d8);
 }
 
 form > a#button > span {
     font-size: 0.9em;
-    color: #989db9;
+    color: black;
 }
 
 footer{
-    margin-top: 200px;
-    border-top: 1px solid black;
     padding: 30px;
     background-color: #202020;
     color: white;
@@ -154,3 +162,59 @@ footer p{
     margin-top: 10px;
     line-height: 1em;
 }
+
+
+
+
+/* Menu */
+    nav{
+    text-align: right;
+    }
+
+    span#burguer{
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 45px;
+    }
+
+    menu{
+    display: none;
+    }
+
+    menu > ul{
+    list-style-type: none;
+    }
+
+    menu > ul > li, a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.123);
+    }
+    menu > ul > li > a#log{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    }
+
+    menu > ul > li > a#log:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.315);
+    color: black;
+    }
+
+    menu > ul > li > a:hover{
+    text-decoration: underline;
+    background-color: rgba(245, 242, 242, 0.603);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+    border-radius: 5px;
+    }
+
+    menu > ul > li > a:active{
+    transform: translate(-2px , -2px);
+    transition: transform 0.1s;
+    }

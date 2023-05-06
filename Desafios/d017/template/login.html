@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/login.css" media="all">
+    <link rel="stylesheet" href="styles/login-media-quearies.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Meet Debora - login</title>
 </head>
-<body>
-    
+<body onresize="changeSize()">
+    <nav>
+    <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="icons">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Online Courses</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Book Class</a></li>
+                <li><a id="log" href="login.html">Login</a></li>
+            </ul>
+        </menu>
+    </nav>
     <main>
         <section id="login">
             <div id="image">
@@ -29,7 +42,7 @@
                         <input type="password" name="passw" id="ipassw" autocomplete="current-password" placeholder="Enter password" required minlength="8">
                         <label for="ipassw">password</label>
                     </div>
-                    
+
                         <input type="submit" value="Log in">
                         <a href="forgot.html" id="button">Forgot password?<span class="material-symbols-outlined">mail</span></a>
             
@@ -39,10 +52,10 @@
     </main>
 
     <footer>
-        <h4>Criado por <strong>Lucas F. Vilas Boas</strong></h4>
+        <h4>Criado por Lucas F. Vilas Boas</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est debitis molestiae quaerat repudiandae sequi ea tenetur incidunt officiis aut consectetur quidem, nulla voluptatum et. Laudantium officiis suscipit natus a illum.</p>
-        <p>Imagens<a href="https://unsplash.com/" target="_blank" rel="external">unsplash</a></p>
-        <p>Para o<a href="https://www.cursoemvideo.com/">cursoemvideo</a></p>
+        <p>Imagens<a href="https://unsplash.com/" target="_blank" rel="external"> unsplash</a></p>
+        <p>Para o<a href="https://www.cursoemvideo.com/"> cursoemvideo</a></p>
     </footer>
     
     <script>
