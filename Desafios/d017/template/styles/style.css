@@ -214,12 +214,12 @@ p > span.name{
 
 div.images02{
     display: inline-block;
-    
+    margin:11px;
 }
 
 div.images02 > img#about01{
     width: 100px;
-    margin-right: 80px;
+    margin-right: 10px;
     vertical-align: middle;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.450);
@@ -233,8 +233,7 @@ div.images02 > img#about02{
 }
 
 section.about-me > p{
-    margin: 50px 0px 0px 186px;
-    font-weight: lighter;
+    margin: 50px 0px 0px 0px;
 }
 
 footer{

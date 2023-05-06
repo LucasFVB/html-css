@@ -14,6 +14,7 @@ html, body {
     background-color: #1D3336;
     background-image: url(../images/background02.jpg);
     background-size: 100vh;
+    background-attachment: fixed;
     background-position: center center;
 }
 
