@@ -173,7 +173,6 @@ Extra large devices: 1200px +
 
     section.about-me > p {
         margin: auto;
-        margin-bottom: ;
         max-width: 50vw;
     }
 
