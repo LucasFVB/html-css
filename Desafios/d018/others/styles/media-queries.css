@@ -1,10 +1,61 @@
 @charset "UTF-8" ;
 
 @media screen and (min-width: 768px) and (max-width: 997px) {
-    
-    
-}
 
-@media screen and (min-width: 997px) {
+    body{
+        background-image: url(../background004.jpg);
+    }
     
+    section#login {
+        width: 80vw;
+        height: 300px;
+    }
+
+    section#login > div#image {
+        float: left;
+        background-image: url(../background005.jpg);
+        height: 100%;
+        width: 30%;
+    }
+
+    section#login > div#forma {
+        float: right;
+        height: 100%;
+        width: 65%;
+    }
+}
+@media screen and (min-width: 997px) {
+
+    body{
+        background-image: url(../background006.jpg);
+        background-position: top;
+    }
+    
+    section#login {
+        width: 80vw;
+        height: 400px;
+    }
+
+    section#login > div#image {
+        float: right;
+        background-image: url(../background007.jpg);
+        height: 100%;
+        width: 40%;
+    }
+
+    section#login > div#forma {
+        float: left;
+        height: 100%;
+        width: 57%;
+    }
+
+    div#forma > h1 {
+        font-size: 2.4em;
+        margin-bottom: 20px;
+    }
+
+    div#forma > p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
 }
