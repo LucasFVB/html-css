@@ -1,0 +1,52 @@
+@charset "UTF-8" ;
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    section#login {
+        width: 80vw;
+        height: 300px;
+    }
+
+    section#login > div#image {
+        float: left;
+        width: 30%;
+        height: 100%;
+        background-position: center;
+    }
+
+    section#login > div#forma {
+        float: right;
+        width: 66%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    section#login {
+        width: 80vw;
+        height: 400px;
+    }
+
+    section#login > div#image {
+        float: right;
+        width: 40%;
+        height: 100%;
+        background-position: center;
+    }
+
+    section#login > div#forma {
+        float: left;
+        width: 55%;
+    }
+
+    div#forma > h1 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    div#forma > p {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+    }
+    
+}
