@@ -1,0 +1,41 @@
+@charset "UTF-8" ;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    display: block;
+}
+
+nav > span#burguer{
+    display: block;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    text-align: right;
+    font-size: 2.3em;
+}
+
+menu{
+    display: none;
+    background-color: white;
+}
+
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+}
+
