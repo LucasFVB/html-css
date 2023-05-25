@@ -1,6 +1,6 @@
 @charset "UTF-8" ;
 
-* {
+* { 
     margin: 0px;
     padding: 0px;
     -webkit-tap-highlight-color: transparent;
@@ -13,23 +13,21 @@ html, body {
 }
 
 nav {
-    display: block;
+    background-color: black;
+    text-align: right;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
 }
 
-nav > span#burguer{
+nav > span#burguer {
     display: block;
     color: white;
-    background-color: black;
+    font-size: 3em;
     cursor: pointer;
-    text-align: right;
-    font-size: 2.3em;
 }
 
-menu{
+menu {
     display: none;
-    background-color: white;
 }
-
 
 menu > ul {
     list-style-type: none;
@@ -37,5 +35,49 @@ menu > ul {
 
 menu > ul > li > a {
     display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
 }
+
+menu > ul > li >a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: .2s;
+}
+
+header {
+    height: 500px;
+    background-image: url(../images/yoga01.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+header > h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3em;
+    transform: translate(-50%, -50%);
+}
+
+header > p {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    font-size: 1.2em;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
 
